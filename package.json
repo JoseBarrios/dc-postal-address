@@ -1,5 +1,5 @@
 {
-  "name": "postal-address",
+  "name": "@josebarrios/postal-address",
   "version": "0.1.0",
   "description": "The mailing address.",
   "main": "index.js",
