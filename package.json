@@ -1,0 +1,39 @@
+{
+  "name": "postal-address",
+  "version": "0.1.0",
+  "description": "The mailing address.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@josebarrios/thing": "^0.3.3",
+    "@josebarrios/intangible": "^0.1.1",
+    "@josebarrios/structured-value": "^0.1.2",
+    "@josebarrios/contact-point": "^0.1.1",
+    "aggregation": "^1.2.0",
+    "colors": "^1.1.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseBarrios/postal-address.git"
+  },
+  "keywords": [
+    "address",
+    "schema",
+    "class"
+  ],
+  "author": "JoseBarrios",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JoseBarrios/postal-address/issues"
+  },
+  "homepage": "https://github.com/JoseBarrios/postal-address#readme"
+}
