@@ -10,7 +10,7 @@ const TYPE = 'PostalAddress'
 
 class PostalAddress extends Multiple(Thing, Intangible, StructuredValue, ContactPoint) {
 
-  get static type(){ return TYPE; }
+  static get type(){ return TYPE; }
 
   constructor(model){
     model = model || {};
@@ -24,7 +24,7 @@ class PostalAddress extends Multiple(Thing, Intangible, StructuredValue, Contact
     this.streetAddress = model.streetAddress;
   }
 
-  get type(){ return PostalAddress.type; }
+  get type(){ return TYPE; }
   set type(value) {}
 
   get addressCountry(){ return this.computed.addressCountry; }
