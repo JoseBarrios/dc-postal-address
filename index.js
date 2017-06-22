@@ -6,8 +6,11 @@ const StructuredValue = require('@josebarrios/structured-value');
 const ContactPoint = require('@josebarrios/contact-point');
 const Multiple = require('aggregation/es6');
 const EMPTY = '';
+const TYPE = 'PostalAddress'
 
 class PostalAddress extends Multiple(Thing, Intangible, StructuredValue, ContactPoint) {
+
+  get static type(){ return TYPE; }
 
   constructor(model){
     model = model || {};
@@ -20,6 +23,9 @@ class PostalAddress extends Multiple(Thing, Intangible, StructuredValue, Contact
     this.postalCode = model.postalCode;
     this.streetAddress = model.streetAddress;
   }
+
+  get type(){ return PostalAddress.type; }
+  set type(value) {}
 
   get addressCountry(){ return this.computed.addressCountry; }
   set addressCountry(value){
