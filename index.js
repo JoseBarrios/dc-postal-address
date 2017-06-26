@@ -64,6 +64,22 @@ class PostalAddress extends Multiple(Thing, Intangible, StructuredValue, Contact
     else if(Thing.isString(value)){ this.computed.streetAddress = value }
     else { Thing.logError(this.constructor.name+': streetAddresstreetAddress must be a string', 'type') }
   }
+
+
+  formatted(type='canada'){
+    type = type.toUpperCase();
+    var format = '';
+    switch(type){
+      case 'CANADA':
+        format = `${this.streetAddress}
+        ${this.addressLocality} ${this.addressRegion} ${this.postalCode}
+        ${this.addressCountry}`
+        break;
+      default:
+        console.error('NO FORMAT FOUND');
+    }
+    return format;
+  }
 }
 
 module.exports = PostalAddress;
