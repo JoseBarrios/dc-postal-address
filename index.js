@@ -71,8 +71,8 @@ class PostalAddress extends Multiple(Thing, Intangible, StructuredValue, Contact
     var format = '';
     switch(type){
       case 'CANADA':
-        format = `${this.streetAddress}
-        ${this.addressLocality} ${this.addressRegion} ${this.postalCode}
+        format = `${this.streetAddress}.
+        ${this.addressLocality}, ${this.addressRegion} ${this.postalCode}
         ${this.addressCountry}`
         break;
       default:

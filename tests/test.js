@@ -13,7 +13,7 @@ model.streetAddress = '204-759 Yates St';
 let postalAddress = new PostalAddress(model);
 
 let key = {};
-key.format = '204-759 Yates St\n        Victoria BC V8W1L6\n        Canada'
+key.format = '204-759 Yates St.\n        Victoria, BC V8W1L6\n        Canada'
 
 describe('PostalAddress\n', function() {
   describe('Instance Methods:', function() {
