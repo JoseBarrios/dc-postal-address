@@ -1,6 +1,6 @@
 {
   "name": "@josebarrios/postal-address",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The mailing address.",
   "main": "index.js",
   "directories": {
